@@ -13,8 +13,9 @@
         }
         
         .wrapper {
-            width: 800px;
+            width: 80vw;
             margin: 0 auto;
+            display:flex;
         }
         
         .sender {
@@ -37,65 +38,79 @@
             padding: 5px;
             display: block;
         }
+        
+        .notification,
+        .confirmation {
+flex:1;        }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <h1>Emailers List</h1>
-        <!-- <div class="sender"> Email in Sender’s account
+        <div class="notification">
+            <h1>notification Emailers List</h1>
+            <ol>
+                <li ><a href="Leverage Conditional Order.html">Leverage Conditional Order</a></li>
+                <li ><a href="Protect Conditional Order.html">Protect Conditional Order</a></li>
+                <li ><a href="Protect Position Transfer CoinLock User Sent.html"> Position Transfer (CoinLock User) - Sent</a> </li>
+                <li ><a href="Protect Position Transfer Sent.html"> Protect Position Transfer (Non CoinLock User) - Sent</a> </li>
+                <li ><a href="BTC Transfer CoinLock User Sent.html">BTC Transfer  (CoinLock User) Sent.html </a> </li>
+                <li ><a href="BTC Transfer Non CoinLock User Sent.html">BTC Transfer  (Non CoinLock User) Sent.html </a> </li>
+                <li ><a href="Sale at Marketplace.html">BTC for sale in the CoinLock Marketplace </a></li>
+                <li ><a href="Filled Protect.html">Filled Protect </a> </li>
+                <li ><a href="Filled Leverage.html">Filled Leverage </a> </li>
+                <li ><a href="Position Unmatched.html">Position Unmatched</a> </li>
+                <li ><a href="Position Unmatched-2.html">Position Unmatched 2</a> </li>
+                <li ><a href="Conditional Order IDON.html">Conditional Order IDON</a> </li>
+                <li ><a href="Conditional Order BTC.html">Conditional Order BTC</a> </li>
+                <li ><a href="Buy in Progress at Marketplace.html">Buy in Progress at Marketplace</a> </li>
+                <li ><a href="Sale in Progress at Marketplace.html">Sale  in Progress at Marketplace</a> </li>
+                <li ><a href="BTC Payment Received.html">BTC Payment Received</a> </li>
+                <li ><a href="Dispute Notice.html">Dispute Notice- Notice of Dispute Received: the one who raised dispute</a> </li>
+                <li ><a href="Dispute Notice2.html">Dispute Notice- Notice of Dispute Received: other party</a> </li>
+                <li ><a href="KYC Initiated.html">KYC Initiated On: dev.matchengine.coinlock.com</a> </li>
+                <li ><a href="SMS Payment Pending.html"> SMS Payment Pending</a> </li>
+                <li ><a href="SMS Payment Sent.html">SMS Payment Sent</a> </li>
+                <li ><a href="BTC Payment Request.html">BTC Payment Request (Non-CoinLock User)</a> </li>
+                <li ><a href="BTC Payment Request2.html">BTC Payment Request(CoinLock User)</a> </li>
+                <li ><a href="BTC Payment Request Cancelled.html">BTC Payment Request Cancelled</a> </li>
+                <li ><a href="Notice of Cancellation.html">Notice of Cancellation</a> </li>
+                <li ><a href="Payment Transfer Cancelled44.html">Payment Transfer Cancelled 44</a> </li>
+                <li ><a href="Payment Transfer Cancelled2.html">Payment Transfer Cancelled 2</a> </li>
+                <li ><a href="Membership Purchase Instructions.html">Membership Purchase Instructions</a> </li>
+                <li ><a href="Stop Limit reached.html"> Stop Limit reached</a> </li>
+                <li ><a href="Reminder if payment not done at Marketplace by buyer.html"> Reminder if payment not done at Marketplace by buyer</a> </li>
+            </ol>
         </div>
-        <div class="receiver"> Email in Receiver’s account</div> -->
-        <ol>
-            <li class=""><a href="Registration.html">Registration</a></li>
-            <li class=""><a href="Forgot Password.html">Forgot Password</a></li>
-            <li class=""><a href="Leverage Conditional Order.html">Leverage Conditional Order</a></li>
-            <li class=""><a href="Protect Conditional Order.html">Protect Conditional Order</a></li>
-            <li class=""><a href="Verify CoinLock Position Transfer.html">Verify CoinLock Position Transfer </a> </li>
-            <li class="receiver"><a href="Protect Position Transfer.html"> Protect Position Transfer  (Non CoinLock User) - Received</a> </li>
-            <li class="sender"><a href="Protect Position Transfer Sent.html"> Protect Position Transfer (Non CoinLock User) - Sent</a> </li>
-            <li class="receiver"><a href="Protect Position Transfer CoinLock User Received.html"> Position Transfer (CoinLock User) - Received</a> </li>
-            <li class="sender"><a href="Protect Position Transfer CoinLock User Sent.html"> Position Transfer (CoinLock User) - Sent</a> </li>
-            <li class="receiver"><a href="BTC Transfer Non CoinLock User Received.html">BTC Transfer (Non CoinLock User) Received.html </a> </li>
-            <li class="sender"><a href="BTC Transfer Non CoinLock User Sent.html">BTC Transfer  (Non CoinLock User) Sent.html </a> </li>
-            <li class="receiver"><a href="BTC Transfer CoinLock User Received.html">BTC Transfer (CoinLock User) Received.html </a> </li>
-            <li class="sender"><a href="BTC Transfer CoinLock User Sent.html">BTC Transfer  (CoinLock User) Sent.html </a> </li>
-            <li class=""><a href="Sale at Marketplace.html">BTC for sale in the CoinLock Marketplace </a></li>
-            <li class=""> <a href="Filled Protect.html">Filled Protect </a> </li>
-            <li class=""> <a href="Filled Leverage.html">Filled Leverage </a> </li>
-            <li class=""> <a href="Position Unmatched.html">Position Unmatched</a> </li>
-            <li class=""> <a href="Position Unmatched-2.html">Position Unmatched 2</a> </li>
-            <li class=""> <a href="Conditional Order IDON.html">Conditional Order IDON</a> </li>
-            <li class=""> <a href="Conditional Order BTC.html">Conditional Order BTC</a> </li>
-            <li class=""> <a href="Buy in Progress at Marketplace.html">Buy in Progress at Marketplace</a> </li>
-            <li class=""> <a href="Sale in Progress at Marketplace.html">Sale  in Progress at Marketplace</a> </li>
-            <li class=""> <a href="BTC Payment Received.html">BTC Payment Received</a> </li>
-            <li class=""> <a href="BTC Payment Confirmation.html">BTC Payment Confirmation</a> </li>
-            <li class=""> <a href="BTC Payment Confirmation 2.html">BTC Payment Confirmation 2</a> </li>
-            <li class=""> <a href="Dispute Notice.html">Dispute Notice- Notice of Dispute Received: the one who raised dispute</a> </li>
-            <li class=""> <a href="Dispute Notice2.html">Dispute Notice- Notice of Dispute Received: other party</a> </li>
-            <li class=""> <a href="Withdrawing Wallet.html">Withdrawing Wallet</a> </li>
-            <li class=""> <a href="KYC Initiated.html">KYC Initiated On: dev.matchengine.coinlock.com</a> </li>
-            <li class=""> <a href="KYC Confirmation.html">KYC Confirmation</a> </li>
-            <li class=""> <a href="CoinLock Withdrawal Complete.html">CoinLock Withdrawal Complete</a> </li>
-            <li class=""> <a href="SMS Payment Pending.html"> SMS Payment Pending</a> </li>
-            <li class=""> <a href="SMS Payment Received.html"> SMS Payment Received</a> </li>
-            <li class=""> <a href="SMS Payment Sent.html">SMS Payment Sent</a> </li>
-            <li class=""> <a href="BTC Payment Request.html">BTC Payment Request (Non-CoinLock User)</a> </li>
-            <li class=""> <a href="BTC Payment Request2.html">BTC Payment Request(CoinLock User)</a> </li>
-            <li class=""> <a href="BTC Payment Request Cancelled.html">BTC Payment Request Cancelled</a> </li>
-            <li class=""> <a href="Notice of Cancellation.html">Notice of Cancellation</a> </li>
-            <li class=""> <a href="Payment Transfer Cancelled44.html">Payment Transfer Cancelled 44</a> </li>
-            <li class=""> <a href="Payment Transfer Cancelled2.html">Payment Transfer Cancelled 2</a> </li>
-            <li class=""> <a href="Buy Membership Request Initiated UserId – 505.html">Buy Membership Request Initiated UserId – 505</a> </li>
-            <li class=""> <a href="Membership Purchase Instructions.html">Membership Purchase Instructions</a> </li>
-            <li class=""> <a href="PROP trader confirmation.html">PROP trader confirmation</a> </li>
-            <li class=""> <a href="Membership Receipt.html">Membership Receipt</a> </li>
-            <li class=""> <a href="Stop Limit reached.html"> Stop Limit reached</a> </li>
-            <li class=""> <a href="Reminder if payment not done at Marketplace by buyer.html"> Reminder if payment not done at Marketplace by buyer</a> </li>
-        </ol>
+        <div class="confirmation  ">
+            <h1>confirmation Emailers List</h1>
+            <ol>
+                <li ><a href="Registration.html">Registration</a></li>
+                <li ><a href="Forgot Password.html">Forgot Password</a></li>
+                <li ><a href="Verify CoinLock Position Transfer.html">Verify CoinLock Position Transfer </a> </li>
+                <li ><a href="Protect Position Transfer.html"> Protect Position Transfer  (Non CoinLock User) - Received</a> </li>
+                <li ><a href="Protect Position Transfer CoinLock User Received.html"> Position Transfer (CoinLock User) - Received</a> </li>
+                <li ><a href="BTC Payment Confirmation.html">BTC Payment Confirmation</a> </li>
+                <li ><a href="BTC Payment Confirmation 2.html">BTC Payment Confirmation 2</a> </li>
+                <li ><a href="Withdrawing Wallet.html">Withdrawing Wallet</a> </li>
+                <li ><a href="KYC Confirmation.html">KYC Confirmation</a> </li>
+                <li ><a href="CoinLock Withdrawal Complete.html">CoinLock Withdrawal Complete</a> </li>
+                <li ><a href="SMS Payment Received.html"> SMS Payment Received</a> </li>
+                <li ><a href="Buy Membership Request Initiated UserId – 505.html">Buy Membership Request Initiated UserId – 505</a> </li>
+                <li ><a href="PROP trader confirmation.html">PROP trader confirmation</a> </li>
+                <li ><a href="Membership Receipt.html">Membership Receipt</a> </li>
+                <li ><a href="BTC Transfer Non CoinLock User Received.html">BTC Transfer (Non CoinLock User) Received.html </a> </li>
+                <li ><a href="BTC Transfer CoinLock User Received.html">BTC Transfer (CoinLock User) Received.html </a> </li>
+
+
+
+
+
+
+
+                
+            </ol>
+        </div>
     </div>
-
 </body>
-
 </html>
